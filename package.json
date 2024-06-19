@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev" : "npx tailwindcss -i ./tailwind.css -o ./src/index.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
