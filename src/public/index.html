@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
     <title>GDSC</title>
   </head>
-  <body class="relative overflow-x-hidden scroll-smooth">
+  <body class="relative overflow-x-hidden">
     <!--Header section-->
     <header>
       <nav class="bg-white border-gray-200 p-4">
@@ -103,7 +103,7 @@
             </p>
             <div class="flex gap-4 my-6 md:my-4">
               <button
-                class="text-neutral-100 font-semibold px-6 py-1 bg-primary border-primary border-[1.5px] rounded-[30px]"
+                class="text-secondary font-semibold px-6 py-1 bg-primary border-primary border-[1.5px] rounded-[30px]"
               >
                 Join Now
               </button>
@@ -179,8 +179,8 @@
     <!--Hero section end-->
 
     <!--About Us section-->
-    <section>
-      <div class="relative min-h-screen px-8 md:px-16">
+    <section id="aboutUs">
+      <div class="relative min-h-screen px-8 md:px-16 xl:mt-10">
         <div class="p-4">
           <h1 class="text-center text-xl md:text-4xl font-bold md:p-4 md:basis-2/3 md:leading-normal">
             Discover the Dynamic World of Google Developer Student Clubs at
@@ -189,12 +189,12 @@
           <div class="relative flex flex-col md:flex-row mt-14">
             <div class="flex items-center justify-center gap-6 w-full md:w-1/2">
               <div class="flex flex-col gap-4 mt-0 md:mt-14">
-                <div class="h-24 w-32 md:h-36 md:w-40 bg-gdsc-1 rounded-lg bg-cover bg-center"></div>
-                <div class="h-24 w-32 md:h-36 md:w-40 bg-gdsc-2 bg-cover bg-center rounded-lg"></div>
+                <div class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-1 rounded-lg bg-cover bg-center"></div>
+                <div class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-2 bg-cover bg-center rounded-lg"></div>
               </div>
               <div class="flex flex-col gap-4 mt-10 md:mt-0">
-                <div class="h-24 w-32 md:h-36 md:w-40 bg-gdsc-3 bg-cover bg-center rounded-lg"></div>
-                <div class="h-24 w-32 md:h-36 md:w-40 bg-gdsc-4 bg-cover bg-center rounded-lg"></div>
+                <div class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-3 bg-cover bg-center rounded-lg"></div>
+                <div class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-4 bg-cover bg-center rounded-lg"></div>
               </div>
 
               <!--background element-->
@@ -208,7 +208,7 @@
                 <p class="text-xl md:text-3xl font-bold">Our</p>
                 <p class="text-xl md:text-3xl font-bold text-primary">Journey</p>
               </div>
-              <p class="text-sm text-justify">
+              <p class="text-sm xl:text-lg text-justify">
                 Google Developer Student Clubs are university based community
                 groups for students interested in Google developer technologies.
                 Students from all undergraduate or graduate programs with an
@@ -217,7 +217,7 @@
                 environment and build solutions for local businesses and their
                 community.      
               </p>
-              <p class="text-sm text-justify">
+              <p class="text-sm xl:text-lg text-justify">
                 GDSC Universitas Sriwijaya has been established since
                 2018 and continues to have a positive impact among developer
                 students at the university.
@@ -234,6 +234,47 @@
       </div>
     </section>
     <!--About Us section end-->
+
+    <!--Upcoming Events section-->
+    <section id="events" class="mt-10">
+        <div class="min-h-screen w-full bg-primary-light md:flex md:justify-center md:items-center">
+            <div class="px-8 py-4 md:px-20 flex flex-col justify-center items-center xl:gap-16">
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class="text-2xl md:text-4xl text-secondary font-bold p-4 xl:p-8">Our Upcoming Events</h1>
+                    <p class="xl:text-xl text-center text-secondary">Get ready for an incredible experience filled with fun, learning, and unforgettable moments. Our next event promises to be even bigger and better, with exciting activities and special guests. Mark your calendars and join us for a fantastic time!</p>
+                </div>
+                <div class="h-[550px] w-72 md:h-[375px] md:w-[760px] bg-white flex flex-col md:flex-row m-8 rounded-lg">
+                    <div class="w-full h-1/2 md:w-1/2 bg-slate-500 md:h-full bg-cover bg-center rounded-l-lg border-r-2 border-r-secondary-dark" style="background-image:url('/assets/images/gdscEvent.png');"></div>
+                    <div class="flex flex-col gap-4 w-full md:w-1/2 p-6">
+                      <button class="text-xs md:text-sm text-succes font-semibold px-6 py-0.5 border-succes border-[1.5px] rounded-[30px] w-fit">
+                        External Ticketing/External RSVP
+                      </button>
+                      <h3 class="text-lg font-bold">Let’s Grow With Community</h3>
+                      <p class="text-sm">Hi, Folks! 😛 </p>
+                      <p class="text-sm">Want to build a thriving tech community but don't know where to start? The GDSC Indonesia Talk Series: Let's Grow With Community is here to help </p>
+                      <div>
+                        <div class="flex items-center gap-2">
+                            <img class="h-4" src="/assets/icons/IconDate.png" alt="calender icon">
+                            <span class="text-sm">Saturday, June 8th 2024</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <img class="h-4" src="/assets/icons/IconClock.png" alt="clock icon">
+                            <span class="text-sm">10:00 AM - 12:00 WIB</span>
+                          </div>
+                          <div class="flex items-center gap-3">
+                            <img class="h-4" src="/assets/icons/IconPin.png" alt="pin icon">
+                            <span class="text-sm">Online</span>
+                          </div>
+                      </div>               
+                      <button class="text-secondary font-semibold px-6 py-1 bg-primary border-primary border-[1.5px] rounded-[30px]">
+                      RSVP Now
+                     </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Upcoming Events section end-->
 
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
