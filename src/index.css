@@ -2564,6 +2564,18 @@ input:checked + .toggle-bg {
     margin-top: 3.5rem;
   }
 
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .md\:-mt-28 {
+    margin-top: -7rem;
+  }
+
+  .md\:-mt-40 {
+    margin-top: -10rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2618,6 +2630,10 @@ input:checked + .toggle-bg {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:min-h-\[75vh\] {
@@ -2782,6 +2798,18 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1280px) {
+  .xl\:-mt-60 {
+    margin-top: -15rem;
+  }
+
+  .xl\:-mt-5 {
+    margin-top: -1.25rem;
+  }
+
+  .xl\:-mt-56 {
+    margin-top: -14rem;
+  }
+
   .xl\:h-20 {
     height: 5rem;
   }
