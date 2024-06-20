@@ -45,6 +45,9 @@ module.exports = {
         'organizer-cd-2':'url("/assets/images/organizer14.png")',
         'organizer-cw':'url("/assets/images/organizer15.png")',
         'organizer-pr':'url("/assets/images/organizer16.png")',
+        'gdsc-5':'url("/assets/images/gdscPhoto5.png")',
+        'filter':'url("/assets/images/filter.png")',
+        'gdsc-filter':'url("/assets/images/gdscPhoto5Filter.png")',
       },
       fontSize: {
         'xxs':'0.45rem'
