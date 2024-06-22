@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>GDSC</title>
   </head>
   <body class="relative overflow-x-hidden">
@@ -183,13 +184,13 @@
       <div class="relative min-h-screen md:h-auto px-8 md:px-16 md:-mt-40 xl:-mt-56">
         <div class="p-4">
           <h1
-            class="text-center text-xl md:text-4xl font-bold md:p-4 md:basis-2/3 md:leading-normal"
+            class="text-center text-xl md:text-4xl font-bold md:p-4 md:basis-2/3 md:leading-normal"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"
           >
             Discover the Dynamic World of Google Developer Student Clubs at
             Universitas Sriwijaya!
           </h1>
           <div class="relative flex flex-col md:flex-row mt-14">
-            <div class="flex items-center justify-center gap-6 w-full md:w-1/2">
+            <div class="flex items-center justify-center gap-6 w-full md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
               <div class="flex flex-col gap-4 mt-0 md:mt-14">
                 <div
                   class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-1 rounded-lg bg-cover bg-center"
@@ -206,21 +207,8 @@
                   class="h-24 w-32 md:h-36 md:w-40 xl:h-48 xl:w-52 bg-gdsc-4 bg-cover bg-center rounded-lg"
                 ></div>
               </div>
-
-              <!--background element-->
-              <img
-                class="absolute h-24 md:h-40 -top-[3%] md:-top-[5%] -z-50 left-[40%] md:left-[15%]"
-                src="/assets/icons/ElementGreenCircleOutlined.png"
-                alt="background element"
-              />
-              <img
-                class="absolute h-16 md:h-24 top-[30%] md:top-auto md:-bottom-[2%] -z-50 -left-[7%] md:left-[40%]"
-                src="/assets/icons/ElementYRCircle.png"
-                alt="background element"
-              />
-              <!--background element-->
             </div>
-            <div class="flex md:justify-center md:item-center flex-col w-full md:w-1/2 gap-5 mt-8 md:mt-0">
+            <div class="flex md:justify-center md:item-center flex-col w-full md:w-1/2 gap-5 mt-8 md:mt-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
               <div class="flex gap-2 mt-4 md:mt-0">
                 <p class="text-xl md:text-3xl font-bold">Our</p>
                 <p class="text-xl md:text-3xl font-bold text-primary">
@@ -242,24 +230,34 @@
                 the university.
               </p>
 
-              <!--background element-->
-              <img
-                class="absolute h-10 md:h-24 bottom-[50%] md:-top-[5%] -z-50 -right-[5%] md:right-0"
-                src="/assets/icons/ElementBlueFLower.png"
-                alt="background element"
-              />
-              <img
-                class="absolute h-20 md:h-36 -bottom-[13%] md:-bottom-[20%] -z-50 right-[3%]"
-                src="/assets/icons/ElementLightning.png"
-                alt="background element"
-              />
-              <img
-                class="absolute h-10 md:h-20 -bottom-[5%] md:-bottom-0 -z-40 right-[10%] md:right-[7%]"
-                src="/assets/icons/ElementGreenDot.png"
-                alt="background element"
-              />
-              <!--background element end-->
             </div>
+            <!--background element-->
+            <img
+              class="absolute h-10 md:h-24 bottom-[50%] md:-top-[5%] -z-50 -right-[5%] md:right-0"
+              src="/assets/icons/ElementBlueFLower.png"
+              alt="background element"
+            />
+            <img
+              class="absolute h-20 md:h-36 -bottom-[13%] md:-bottom-[20%] -z-50 right-[3%]"
+              src="/assets/icons/ElementLightning.png"
+              alt="background element"
+            />
+            <img
+              class="absolute h-10 md:h-20 -bottom-[5%] md:-bottom-0 -z-40 right-[10%] md:right-[7%]"
+              src="/assets/icons/ElementGreenDot.png"
+              alt="background element"
+            />
+            <img
+              class="absolute h-24 md:h-40 -top-[3%] md:-top-[5%] -z-50 left-[40%] md:left-[15%]"
+              src="/assets/icons/ElementGreenCircleOutlined.png"
+              alt="background element"
+            />
+            <img
+              class="absolute h-16 md:h-24 top-[30%] md:top-auto md:-bottom-[2%] -z-50 -left-[7%] md:left-[40%]"
+              src="/assets/icons/ElementYRCircle.png"
+              alt="background element"
+            />
+            <!--background element end-->
           </div>
         </div>
       </div>
@@ -276,11 +274,11 @@
         >
           <div class="flex flex-col items-center justify-center">
             <h1
-              class="text-2xl md:text-4xl text-secondary font-bold p-4 xl:p-8"
+              class="text-2xl md:text-4xl text-secondary font-bold p-4 xl:p-8" data-aos="fade-right" data-aos-duration="1000"
             >
               Our Upcoming Events
             </h1>
-            <p class="xl:text-xl text-center text-secondary">
+            <p class="xl:text-xl text-center text-secondary" data-aos="fade-left" data-aos-duration="1000">
               Get ready for an incredible experience filled with fun, learning,
               and unforgettable moments. Our next event promises to be even
               bigger and better, with exciting activities and special guests.
@@ -288,7 +286,7 @@
             </p>
           </div>
           <div
-            class="h-[550px] w-72 md:h-[375px] md:w-[760px] bg-white flex flex-col md:flex-row m-8 rounded-lg"
+            class="h-[550px] w-72 md:h-[375px] md:w-[760px] bg-white flex flex-col md:flex-row m-8 rounded-lg" data-aos="flip-left" data-aos-duration="1200"
           >
             <div
               class="w-full h-1/2 md:w-1/2 bg-slate-500 md:h-full bg-cover bg-center rounded-l-lg border-r-2 border-r-secondary-dark"
@@ -349,7 +347,7 @@
     <section>
       <div class="min-h-[50vh] md:min-h-[75vh] px-8 md:px-16 my-10">
         <div class="p-4 flex flex-col gap-4">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <span class="text-sm">Amazing event here</span>
             <div class="flex gap-2">
               <h1 class="text-2xl md:text-4xl font-bold">Our recent</h1>
@@ -359,6 +357,7 @@
           <div
             id="cards"
             class="w-full py-4 h-fit flex gap-6 overflow-x-scroll overflow-y-hidden"
+            data-aos="zoom-in" data-aos-duration="1000"
           >
             <!-- <div class="h-80 md:h-[350px] w-52 md:w-72 bg-white rounded-lg border-[0.5px] border-secondary-dark">
                         <div class="h-40 md:h-52 bg-slate-50 rounded-t-lg border-b-[0.5px] border-b-secondary-dark bg-cover bg-center" style="background-image: url('/assets/images/gdscEvent2.png');"></div>
@@ -386,38 +385,38 @@
           <div class="grid md:grid-cols-4 gap-4">
             <div class="min-h-32 col-span-2 flex flex-col gap-4">
               <div class="flex gap-2">
-                <h1 class="text-2xl md:text-4xl font-bold">Our</h1>
-                <h1 class="text-2xl md:text-4xl text-warning-lighter font-bold">
+                <h1 class="text-2xl md:text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000">Our</h1>
+                <h1 class="text-2xl md:text-4xl text-warning-lighter font-bold" data-aos="fade-down" data-aos-duration="1000">
                   Gallery
                 </h1>
               </div>
-              <p class="w-full md:w-3/4 py-4">
+              <p class="w-full md:w-3/4 py-4" data-aos="zoom-in" data-aos-duration="1000">
                 Check out our gallery! Explore moments and memories captured
                 during our amazing event.
               </p>
             </div>
-            <div class="min-h-32 row-span-2 col-span-2 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 row-span-2 col-span-2 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-1 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-2 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-3 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 row-span-2 col-span-2 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 row-span-2 col-span-2 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-4 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-5 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-6 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-7 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
-            <div class="min-h-32 cursor-pointer group overflow-hidden">
+            <div class="min-h-32 cursor-pointer group overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
               <div class="h-full bg-gallery-8 bg-cover bg-center group-hover:scale-125 group-hover:rotate-2 ease-in-out duration-700"></div>
             </div>
             
@@ -433,18 +432,18 @@
         <div class="p-4">
           <div class="flex flex-col gap-4 justify-center items-center xl:pb-10">
             <div class="inline-block md:flex gap-2">
-              <h1 class="text-2xl md:text-4xl font-bold">Come and meet our</h1>
+              <h1 class="text-2xl md:text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000">Come and meet our</h1>
               <h1
-                class="text-danger text-2xl md:text-4xl font-bold text-center"
+                class="text-danger text-2xl md:text-4xl font-bold text-center" data-aos="fade-down" data-aos-duration="1000"
               >
                 awesome
               </h1>
-              <h1 class="text-2xl md:text-4xl font-bold text-center">
+              <h1 class="text-2xl md:text-4xl font-bold text-center" data-aos="fade-up" data-aos-duration="1000">
                 organizers!
               </h1>
             </div>
 
-            <p class="w-full md:w-3/4 text-center">
+            <p class="w-full md:w-3/4 text-center" data-aos="fade-up" data-aos-duration="1000">
               They are the ones making everything happen behind the scenes.
               Don’t miss the chance to connect with the people who made this
               incredible event possible!
@@ -452,7 +451,7 @@
           </div>
           <div class="py-10">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8">
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-lead bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -466,7 +465,7 @@
                 <span class="text-center">GDSC Lead</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-colead bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -482,7 +481,7 @@
                 <span class="text-center">GDSC Co-Lead</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-tresurer bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -496,7 +495,7 @@
                 <span class="text-center">GDSC Treasurer</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-secretary bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -510,7 +509,7 @@
                 <span class="text-center">GDSC Secretary</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-fe bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -528,7 +527,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-be bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -546,7 +545,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-md bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -564,7 +563,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-ml bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -580,7 +579,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-cs bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -594,7 +593,7 @@
                 <span class="w-2/3 text-center">Cyber Security Core Team</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-uiux bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -610,7 +609,7 @@
                 <span class="text-center">UI/UX Core Team</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-pm bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -628,7 +627,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-comdev bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -644,7 +643,7 @@
                 >
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-cd bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -658,7 +657,7 @@
                 <span class="w-2/3 text-center">Creative Design Core Team</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-cd-2 bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -674,7 +673,7 @@
                 <span class="w-2/3 text-center">Creative Design Core Team</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-cw bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -690,7 +689,7 @@
                 <span class="w-2/3 text-center">Content Writing Core Team</span>
               </div>
 
-              <div class="flex flex-col items-center">
+              <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="relative bg-organizer-pr bg-center bg-cover rounded-full h-32 md:h-44 w-32 md:w-44 mb-2"
                 >
@@ -871,5 +870,9 @@
 
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="/src/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({once: true});
+    </script>
   </body>
 </html>
