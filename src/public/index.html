@@ -9,7 +9,7 @@
   </head>
   <body class="relative overflow-x-hidden">
     <!--Header section-->
-    <header class="sticky top-0 z-50 bg-white">
+    <header id="navbar" class="sticky top-0 z-50 bg-white">
       <nav class="border-gray-200 p-4">
         <div
           class="px-8 md:px-16 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
@@ -770,7 +770,7 @@
                   <input
                     class="border-2 border-white w-full bg-transparent text-white placeholder:text-secondary-dark"
                     type="email"
-                    placeholder="youremail@gmail.com"
+                    placeholder="youremail@gmail.com" name="email" id="email"
                   />
                 </div>
                 <div class="flex flex-col mb-4">
@@ -778,7 +778,7 @@
                   <input
                     class="border-2 border-white w-full bg-transparent text-white placeholder:text-secondary-dark"
                     type="text"
-                    placeholder="your subject here"
+                    placeholder="your subject here" name="subject" id="subject"
                   />
                 </div>
                 <div class="flex flex-col">
@@ -786,7 +786,7 @@
                   <textarea
                     rows="6"
                     class="border-2 border-white w-full bg-transparent text-white placeholder:text-secondary-dark"
-                    placeholder="your message here"
+                    placeholder="your message here" name="message" id="message"
                   ></textarea>
                 </div>
                 <button
