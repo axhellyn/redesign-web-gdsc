@@ -98,7 +98,7 @@
             class="w-full md:w-1/2 flex flex-col justify-center items-center gap-8"
           >
             <h1
-              class="text-3xl md:text-6xl font-bold text-center bg-slate-red leading-normal tracking-wider"
+              class="text-3xl md:text-[2.5rem] xl:text-6xl font-bold text-center bg-slate-red leading-normal tracking-wider"
             >
               Google Developer Student Clubs
             </h1>
@@ -143,7 +143,7 @@
           alt="logo gdsc"
         />
         <img
-          class="hidden md:block absolute h-44 top-14 left-32 opacity-50 md:opacity-100"
+          class="hidden md:block absolute h-44 top-14 left-32 opacity-50 md:opacity-100 -z-50"
           src="/assets/icons/Ellipse.png"
           alt="ellipse"
         />
@@ -182,41 +182,88 @@
     </section>
     <!--Hero section end-->
 
-    <!--Events section-->
-    <section>
-      <div class="min-h-[50vh] md:min-h-[75vh] px-8 md:px-16 my-10">
-        <div class="p-4 flex flex-col gap-4">
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <span class="text-sm">Amazing event here</span>
-            <div class="flex gap-2">
-              <h1 class="text-2xl md:text-4xl font-bold">Our recent</h1>
-              <h1 class="text-2xl md:text-4xl text-succes font-bold">Events</h1>
-            </div>
+    <!--Mission section-->
+    <section class="relative">
+      <div class="min-h-screen w-full md:h-screen px-8 md:px-16 -mt-16">
+        <div
+          class="p-4 w-full h-full flex flex-col items-center justify-center gap-8"
+        >
+          <div class="flex justify-center gap-2">
+            <h1 class="text-xl md:text-4xl font-bold">Curious About</h1>
+            <h1 class="text-xl md:text-4xl font-bold text-primary">
+              Our Mission?
+            </h1>
           </div>
           <div
-            id="cards"
-            class="w-full py-4 h-fit flex gap-6 overflow-x-scroll overflow-y-hidden"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
+            class="w-full h-full md:h-[60vh] flex flex-col gap-8 md:gap-0 md:flex-row justify-between items-center py-10 md:py-0"
           >
-            <!-- <div class="h-80 md:h-[350px] w-52 md:w-72 bg-white rounded-lg border-[0.5px] border-secondary-dark">
-                        <div class="h-40 md:h-52 bg-slate-50 rounded-t-lg border-b-[0.5px] border-b-secondary-dark bg-cover bg-center" style="background-image: url('/assets/images/gdscEvent2.png');"></div>
-                        <div class="flex flex-col px-6 py-3 gap-4">
-                            <div class="flex items-center gap-2">
-                                <img class="h-3" src="/assets/icons/IconDateGrey.png" alt="calender icon">
-                                <span class="text-secondary-darker text-xs">Jun 2, 2024</span>
-                            </div>
-                            <h3 class="text-xs md:text-sm font-bold">Maximize Your Content with Beautiful Assets</h3>
-                                <button class="text-xxs md:text-xs text-danger-lighter font-semibold px-6 py-0.5 border-danger-lighter border-[1.5px] rounded-[30px] w-fit">
-                                    Speaker Session/Tech Talk
-                                </button>
-                        </div>
-                    </div>   -->
+            <div
+              class="h-fit w-[225px] md:w-[275px] xl:w-[300px] p-6 flex flex-col items-center justify-center gap-4 border-[6px] border-dashed rounded-lg border-primary bg-white"
+            >
+              <img
+                class="h-12 md:h-16 w-auto"
+                src="/assets/icons/IconConnect.png"
+                alt="Connect Icon"
+              />
+              <h3 class="text-primary font-bold text-lg md:text-2xl">
+                Connect
+              </h3>
+              <p class="text-center text-xs md:text-base">
+                Meet students who are interested in developer technology at your
+                college or university. Anyone can join, including those with
+                different backgrounds and majors.
+              </p>
+            </div>
+            <div
+              class="h-fit w-[225px] md:w-[275px] xl:w-[300px] p-6 flex flex-col items-center justify-center gap-4 border-[6px] border-dashed rounded-lg border-primary bg-white"
+            >
+              <img
+                class="h-12 md:h-16 w-auto"
+                src="/assets/icons/IconLearn.png"
+                alt="Connect Icon"
+              />
+              <h3 class="text-primary font-bold text-lg md:text-2xl">Learn</h3>
+              <p class="text-center text-xs md:text-base">
+                Learn about various technical topics and acquire new skills
+                through workshops, events, discussions, and project-building
+                activities, both online and in person.
+              </p>
+            </div>
+            <div
+              class="h-fit w-[225px] md:w-[275px] xl:w-[300px] p-6 flex flex-col items-center justify-center gap-4 border-[6px] border-dashed rounded-lg border-primary bg-white"
+            >
+              <img
+                class="h-12 md:h-16 w-auto"
+                src="/assets/icons/IconGrow.png"
+                alt="Connect Icon"
+              />
+              <h3 class="text-primary font-bold text-lg md:text-2xl">Grow</h3>
+              <p class="text-center text-xs md:text-base">
+                Meet students who are interested in developer technology at your
+                college or university. Anyone can join, including those with
+                different backgrounds and majors.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
+      <!--Background element-->
+      <div>
+        <img
+          class="absolute h-1/4 md:h-2/3 right-0 top-0 -z-50 opacity-50 md:opacity-100"
+          src="/assets/icons/ElementBigRedCircle.png"
+          alt="red circle element"
+        />
+        <img
+          class="absolute h-1/4 md:h-2/3 left-0 bottom-0 -z-50 opacity-50 md:opacity-100"
+          src="/assets/icons/ElementBigGreenCircle.png"
+          alt="green circle element"
+        />
+      </div>
+      <!--Background element end-->
     </section>
-    <!--Events section end-->
+    <!--Mission section end-->
 
     <!--foooter-->
     <footer>

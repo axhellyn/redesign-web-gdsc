@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .border-dashed {
+    border-style: solid 6px transparent;
+    border-radius: 8px;
+    border-color: #0052dc;
+    border-image: url("/assets/icons/borderDashed.png") 10 round;
+  }
+}
