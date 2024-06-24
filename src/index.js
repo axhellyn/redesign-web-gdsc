@@ -27,59 +27,90 @@
 
 const events = [];
 
-function fetchEventData(){
-    fetch('http://127.0.0.1:8080/events')
-        .then(response => response.json())
-        .then(data => {
-            events.push(...data);
-            renderCards();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+function fetchEventData() {
+  fetch("http://127.0.0.1:8080/events")
+    .then((response) => response.json())
+    .then((data) => {
+      events.push(...data);
+      renderCards();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
 
 function renderCards() {
-    const cards = document.getElementById('cards');
-    cards.innerHTML = ''; 
+  const cards = document.getElementById("cards");
+  cards.innerHTML = "";
 
-    for (let event of events) {
-        const card = document.createElement("div");
-        card.classList.add("h-80", "md:h-[350px]", "w-52", "md:w-72", "bg-white", "rounded-lg", "border-[0.5px]", "border-secondary-dark");
+  for (let event of events) {
+    const card = document.createElement("div");
+    card.classList.add(
+      "h-80",
+      "md:h-[350px]",
+      "min-w-52",
+      "md:min-w-72",
+      "bg-white",
+      "rounded-lg",
+      "border-[0.5px]",
+      "border-secondary-dark"
+    );
 
-        card.innerHTML = `
-            <div class="h-40 md:h-52 w-full bg-slate-50 rounded-t-lg border-b-[0.5px] border-b-secondary-dark bg-cover bg-center" style="background-image: url(${event.pamflet});"></div>
-            <div class="h-full flex flex-col px-6 py-3 gap-4">
+    card.innerHTML = `
+            <div class="h-40 md:h-52 w-full bg-slate-50 rounded-t-lg border-b-[0.5px] border-b-secondary-dark bg-cover bg-center" style="background-image: url(${
+              event.pamflet
+            });"></div>
+            <div class="h-1/2 md:h-2/5 flex flex-col px-6 py-3 gap-4">
                 <div class="flex items-center gap-2">
                     <img class="h-3" src="/assets/icons/IconDateGrey.png" alt="calendar icon">
-                    <span class="text-secondary-darker text-xs">${new Date(event.date).toLocaleDateString()}</span>
+                    <span class="text-secondary-darker text-xs">${new Date(
+                      event.date
+                    ).toLocaleDateString()}</span>
                 </div>
                 <h3 class="text-xs md:text-sm font-bold">${event.title}</h3>
                 <button class="text-xxs md:text-xs font-semibold px-6 py-0.5 border-[1.5px] rounded-[30px] w-fit ${
-                            event.eventType === 'Speaker Session/Tech Talk' ? 'text-danger-lighter border-danger-lighter' : 'text-succes-lighter border-succes-lighter'
-                        }">
+                  event.eventType === "Speaker Session/Tech Talk"
+                    ? "text-danger-lighter border-danger-lighter"
+                    : "text-succes-lighter border-succes-lighter"
+                }">
                             ${event.eventType}
                 </button>
             </div>
-        `;    
+        `;
 
-        cards.appendChild(card);
-    }
+    cards.appendChild(card);
+  }
 }
 
-console.log('Fetching event data...');
+console.log("Fetching event data...");
 fetchEventData();
 
+//navbar
 window.onscroll = () => {
-    addScrollBorder();
-    };
-      
+  addScrollBorder();
+};
+
 function addScrollBorder() {
-    var navbar = document.getElementById("navbar");
-      
-    if (window.scrollY > 0) {
-        navbar.classList.add("shadow-lg");
-    } else {
-        navbar.classList.remove("shadow-lg");
-    }
+  var navbar = document.getElementById("navbar");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("shadow-lg");
+  } else {
+    navbar.classList.remove("shadow-lg");
+  }
 }
+
+//accordion
+const accordionHeader = document.querySelectorAll(".accordion-header");
+
+accordionHeader.forEach((accordionHeader) => {
+  accordionHeader.addEventListener("click", (event) => {
+    accordionHeader.classList.toggle("active");
+    const accordionBody = accordionHeader.nextElementSibling;
+    if (accordionHeader.classList.contains("active")) {
+      accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+    } else {
+      accordionBody.style.maxHeight = 0;
+    }
+  });
+});
