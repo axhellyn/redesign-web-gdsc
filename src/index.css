@@ -1251,6 +1251,22 @@ input:checked + .toggle-bg {
   top: 30%;
 }
 
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
+.right-44 {
+  right: 11rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1310,6 +1326,11 @@ input:checked + .toggle-bg {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1356,6 +1377,14 @@ input:checked + .toggle-bg {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .block {
@@ -1493,6 +1522,22 @@ input:checked + .toggle-bg {
 
 .h-\[60vh\] {
   height: 60vh;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.h-\[20vh\] {
+  height: 20vh;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .min-h-32 {
@@ -1722,6 +1767,10 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-x-4 {
@@ -1975,6 +2024,11 @@ input:checked + .toggle-bg {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2259,6 +2313,11 @@ input:checked + .toggle-bg {
 
 .text-xxs {
   font-size: 0.45rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -2703,6 +2762,14 @@ input:checked + .toggle-bg {
     top: auto;
   }
 
+  .md\:-bottom-10 {
+    bottom: -2.5rem;
+  }
+
+  .md\:right-44 {
+    right: 11rem;
+  }
+
   .md\:z-auto {
     z-index: auto;
   }
@@ -2710,6 +2777,11 @@ input:checked + .toggle-bg {
   .md\:my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .md\:-mt-40 {
@@ -2984,6 +3056,11 @@ input:checked + .toggle-bg {
     font-size: 2.5rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:leading-normal {
     line-height: 1.5;
   }
@@ -3069,6 +3146,11 @@ input:checked + .toggle-bg {
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
